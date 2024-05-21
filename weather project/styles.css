@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(to right, #6dd5ed, #2193b0);
+    color: #fff;
+    text-align: center;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    padding: 1rem 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    animation: fadeIn 2s ease-in-out;
+}
+
+#search {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+#search input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    margin-right: 0.5rem;
+}
+
+#search button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #2193b0;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#search button:hover {
+    background-color: #6dd5ed;
+}
+
+#weather {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 400px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+#weather h2, #weather p {
+    margin: 0.5rem 0;
+}
+
+#temperature {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#conditions {
+    font-size: 1.2rem;
+}
+
+#weatherIcon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
